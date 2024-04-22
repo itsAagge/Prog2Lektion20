@@ -1,12 +1,13 @@
 package opgave03;
 
-import opgave03.models.Bike;
+import opgave03.models.NormalBikeStore;
+import opgave03.models.bikes.Bike;
 import opgave03.models.BikeStore;
-import opgave03.models.BikeType;
+import opgave03.models.bikes.BikeType;
 
 public class Opgave03 {
     public static void main(String[] args) {
-        BikeStore bikeStore = new BikeStore();
+        BikeStore bikeStore = new NormalBikeStore();
         Bike bike = bikeStore.orderBike(BikeType.TANDEM);
     }
 }
